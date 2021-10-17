@@ -1,0 +1,125 @@
+
+<style>
+.body2{
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+.container01 {
+    padding: 50px;
+  background-color: lightblue;
+}
+
+input[type=text], input[type=password], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: orange;
+  outline: none;
+}
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+</style>
+
+ <section class="body2">
+<form>
+  <div class="container01">
+  <center>  <h1> Create your Smart Agreement </h1> </center>
+  <hr>
+  <label> Chain of Events for Transaction </label>
+<input type="text" name="events" placeholder= "List the events " size="15" required />
+<label>Used IOT Devices </label>
+<input type="text" name="IOT" placeholder="Devices Address" size="15" required />
+<label> Value Transfered at each events </label>
+<input type="text" name="transfer" placeholder="Evaluation and Transfer" size="15"required />
+
+
+<div class="row">
+  <div class="col-md-6">
+    <label for="exampleFormControlInput1">Product</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Item Name">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="exampleFormControlSelect1">Delivery Requirement</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Daily</option>
+      <option>Weekly</option>
+      <option>Monthly</option>
+      <option>Time period</option>
+      <option>Year around</option>
+    </select>
+  </div>
+
+<div class="bid-details row">
+<div class="form-group col-md-3">
+    <label for="exampleFormControlInput1">Ordered Quantity</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Qt in kg">
+</div>
+
+<div class="form-group col-md-3">
+    <label for="exampleFormControlInput1">Agreed price</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Per kg">
+</div>
+
+</div>
+</div>
+
+
+
+
+<div>
+<label>
+Delivery method
+</label>
+
+<select>
+<option >Choose</option>
+<option value="Delivery on Door">Delivery on Door</option>
+<option value="Drop-off Points">Drop-off Points</option>
+<option value="On-Farm Pickup">On-Farm Pickup</option>
+</select>
+</div>
+<div>
+<label>
+Transaction:
+</label><br>
+<input type="radio" value="Male" name="gender" checked > On-Delivery
+<input type="radio" value="Female" name="gender"> Pre delivery 50%- After delivery 50%
+<input type="radio" value="Other" name="gender"> After a week of delivery
+
+</div>
+<label>
+Phone :
+</label>
+<input type="text" name="country code" placeholder="Country Code"  value="+977"/>
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>
+Current Address :
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+</textarea>
+ <label for="email"><b>Message</b></label>
+ <input type="text" placeholder="write a Note" name="note" required>
+
+    <label for="psw"><b>Public address of your Trading Partner</b></label>
+    <input type="password" placeholder="Enter Supplier's Public Address" name="psw" required>
+
+    <label ><b>Private Signature</b></label>
+    <input type="text" placeholder="Your Private Key" name="psw-repeat" required>
+    <button type="submit" class="registerbtn">Register contract to a Block</button>
+</form>
+</section>

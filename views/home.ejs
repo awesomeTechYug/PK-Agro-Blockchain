@@ -1,0 +1,50 @@
+<%- include("partials/header"); -%>
+<Font color= "#6aae20">
+<div class="welcome_content">
+<h1>Namaste</h1>
+<p> <%= startingContent %> </p>
+</font>
+<!-- <% posts.forEach(function(post){ %>
+<h1><%= post.title %></h1>
+<p>
+  <%= post.content.substring(0,100) %>...
+  <a href="/posts/<%= post.title %>">Read more</a>
+</p>
+<% }) %>
+</div> -->
+
+<section id="homepage_card">
+
+<div class="row">
+  <div class="col-sm-4 center-the-card">
+  <div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <img class="card-img-top" src="/img/producer.png" alt="Farmers">
+    <p></p>
+    <a href="producer" class="btn btn-primary">Producer</a>
+  </div>
+</div>
+</div>
+  <div class="col-sm-4 center-the-card">
+    <div class="card text-center" style="width: 18rem;">
+      <div class="card-body">
+        <img class="card-img-top" src="/img/broker.png" alt="Broker">
+        <p></p>
+        <a href="/broker" class="btn btn-primary">Broker</a>
+        <a href="/Customer" class="btn btn-primary">Consumer</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 center-the-card">
+    <div class="card text-center" style="width: 18rem;">
+      <div class="card-body">
+        <img class="card-img-top" src="/img/logistics.png" alt="logistics">
+        <p></p>
+        <a href="/logestics" class="btn btn-primary">Logistics</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<%- include("partials/footer"); -%>

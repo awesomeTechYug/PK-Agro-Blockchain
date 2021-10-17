@@ -1,0 +1,135 @@
+<%- include("../../partials/header"); -%>
+<h1><Font color= #1e81b0>  Lets Rip the Reward </font></h1>
+
+<style >
+.sell-to{
+  margin-top: 50px;  margin-bottom: 20px;
+}
+.ItemName, .sell-to{
+  margin-bottom: 30px;   padding: 0 15px;
+}
+.checkspace, .checkspace2{
+  margin-right: 70px;
+}
+.availity-salebtn{
+  padding: 0 15px;
+}
+.btn001{
+  margin: 50px 0;
+}
+</style>
+
+
+<div class="sell-wrapper">
+  <h4>Name: Mero Farm and Essential Oil Maufacturer Pvt. Ltd </h4>
+  <h5>PKAB Address:19000825A5C67CE690DA </h5>
+
+  <form class="sellharvest-form" method="post">
+
+
+<div class="sell-to row">
+
+    <div class="form-row col-md-6">
+      <h4>Who do you want to sell to?</h4>
+
+        <div class="form-check ">
+          <input class=" form-check-input" type="checkbox" id="gridCheck">
+          <label class="checkspace form-check-label" for="gridCheck">
+            Business
+          </label>
+          <input class=" form-check-input" type="checkbox" id="gridCheck">
+          <label class="checkspace form-check-label" for="gridCheck">
+            Broker
+          </label>
+          <input class="checkspace form-check-input" type="checkbox" id="gridCheck">
+          <label class="checkspace form-check-label" for="gridCheck">
+            Direct Consumer
+          </label>
+        </div>
+      </div>
+
+  <div class="Calender col-md-6">
+    <h4>Harvest Time </h4>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Date">
+
+  </div>
+
+</div>
+
+  <div class="ItemName form-group ">
+    <label for="inputAddress">Produce Item Name</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Name">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Qunatity Available</label>
+      <input type="Text" class="form-control" id="inputEmail4" placeholder="Qt in kg">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Price per kg</label>
+      <input type="Text" class="form-control" id="inputPassword4" placeholder="Price">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Location</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Harvest quality</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Organic</option>
+        <option>Normal</option>
+        <option>chemical treated</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+
+
+  <div class="availity-salebtn form-group">
+    <h4>Avability</h4>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="checkspace2 form-check-label" for="gridCheck">
+        Delivery on Door
+      </label>
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="checkspace2 form-check-label" for="gridCheck">
+        Drop-off Points
+      </label>
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="checkspace2 form-check-label" for="gridCheck">
+        Farmers Market
+      </label>
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="checkspace2 form-check-label" for="gridCheck">
+        On-Farm Pickup
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Terms and Conditions</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <div class="btn001 ">
+    <button type="submit" class="btn btn-primary btn-lg">PUBLISH </button>
+  </div>
+
+  </form>
+
+
+</div>
+
+
+
+<%- include("../../partials/footer"); -%>
